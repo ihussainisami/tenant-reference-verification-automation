@@ -24,3 +24,7 @@ n8n, Google Sheets, Gmail/SMTP, native n8n Forms
 - Replace placeholder credentials (Google Sheets, SMTP)
 - Update form URLs after activating workflows
 - Adjust Wait node duration as needed (default: 48 hours)
+
+## Demo
+[See it in action](https://drive.google.com/file/d/19qq3UpHk7mRaThNHkNqWGv2OMTE2qbTl/view?usp=sharing)
+
