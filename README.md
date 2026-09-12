@@ -2,8 +2,7 @@
 
 ## Problem
 Agents and property managers manually chase previous landlords for 
-tenant references. When the landlord doesn't respond, there's no 
-consistent follow-up leads to delayed move-ins and missed red flags.
+tenant references. When the landlord doesn't respond, there's no consistent follow-up, which leads to delayed move-ins and missed red flags.
 
 ## How It Works
 1. Agent submits applicant details via form
