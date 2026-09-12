@@ -221,7 +221,7 @@
         "fromEmail": "",
         "toEmail": "={{ $json['Landlord Email'] }}",
         "subject": "=Tenant Reference Request for {{ $json['Applicant Name'] }}",
-        "html": "=<p>Hello,</p>\n<p>A reference request has been submitted for the property at <strong>{{ $json['Property Address'] }}</strong> regarding applicant <strong>{{ $json['Applicant Name'] }}</strong>.</p>\n<p>Please complete the reference form by clicking the link below:</p>\n<p><a href=\"={{ $json['Submission ID'] }}\">Tenant Reference Feedback Form</a></p>\n<p>Thank you,<br>Property Management Team</p>",
+        "html": "=<p>Hello,</p>\n<p>A reference request has been submitted for the property at <strong>{{ $json['Property Address'] }}</strong> regarding applicant <strong>{{ $json['Applicant Name'] }}</strong>.</p>\n<p>Please complete the reference form by clicking the link below:</p>\n<p><<a href=\"={{ $json['Submission ID'] }}\">Tenant Reference Feedback Form</a></p>\n<p>Thank you,<br>Property Management Team</p>",
         "options": {}
       },
       "type": "n8n-nodes-base.emailSend",
@@ -548,7 +548,7 @@
         "fromEmail": "",
         "toEmail": "={{ $('Get row(s) in sheet').item.json['Agent Email'] }}",
         "subject": "=ALERT: Tenant Reference Pending for {{ $('Get row(s) in sheet').item.json['Applicant Name'] }} — Reminder Sent to Landlord",
-        "html": "=<p>Hello Agent,</p>\n<p>This is an automated notification for property <strong>{{ $('Get row(s) in sheet').item.json['Property Address'] }}</strong> regarding applicant <strong>{{ $('Get row(s) in sheet').item.json['Applicant Name'] }}</strong>.</p>\n<p>The landlord has not responded yet. We have automatically sent a reminder email to the landlord, but you may want to follow up manually.</p>\n<p><a href=\"={{ $('Get row(s) in sheet').item.json['Submission ID'] }}\">Tenant Reference Feedback Form</a></p>\n<p>Thank you,<br>Property Management Automation System</p>",
+        "html": "=<p>Hello Agent,</p>\n<p>This is an automated notification for property <strong>{{ $('Get row(s) in sheet').item.json['Property Address'] }}</strong> regarding applicant <strong>{{ $('Get row(s) in sheet').item.json['Applicant Name'] }}</strong>.</p>\n<p>The landlord has not responded yet. We have automatically sent a reminder email to the landlord, but you may want to follow up manually.</p>\n<p><a href=\"={{ $json['Submission ID'] }}\">Tenant Reference Feedback Form</a></p>\n<p>Thank you,<br>Property Management Automation System</p>",
         "options": {}
       },
       "type": "n8n-nodes-base.emailSend",
